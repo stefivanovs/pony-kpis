@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Pony KPIs 2024-25</title>
-    <style>
-        body {
+    <title>Protected Dashboard</title>
+    <script>
+        function checkPassword() {
+            const password = prompt('Please enter the password:');
+            if (password !== 'SamplePassword') {
+                alert('Incorrect password.');
+                window.location = 'https://github.com'; // Redirect on wrong password
+            }
+        }
+    </script>
+</head>
+<body onload="checkPassword()">
             margin: 0;
             padding: 0;
             background-color: #0E1017; /* Dark background for contrast */
